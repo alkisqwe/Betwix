@@ -38,8 +38,10 @@ A TMDB Client made without Libraries and without Gradle in Greek
 Replace "tmdbid" with your own tmdb authentication id in res/values/strings
 
 # To-Do
-Create proper ui for phones
-Create adaptive ui for android tv(currently 52')
-Add plugin support
-Add multilanguage
-Fix small bugs
+
+* Create proper ui for phones
+* Create adaptive ui for android tv(currently 52')
+* Add plugin support
+* Add multilanguage
+* Fix small bugs
+* Add settings menu
