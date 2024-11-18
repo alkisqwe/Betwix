@@ -1,35 +1,36 @@
 A TMDB Client made without Libraries and without Gradle in Greek
 
-features
-made from skratch
-made without libraries
-made without gradle
-get famous movies
-get famous siries
-get movie/siries trailer
-get movie/siries title
-get movie/siries genres
-get movie/siries description
-get movie/siries release date
-get movie/siries rating
-get movie/siries duration
-get movie/siries actors
-get movie/siries recomended
-get movie/siries poster
-get siries episodes poster
-get siries total episodes
-get siries seasons
-get siries episodes
-get siries episode description
-get siries episode title
-get siries episode release date
-get actors social media
-get movies/siries where actors play in
-search movies/siries by text or genres
-search actors
-favorites
-button navigation for android tv
-shortcuts to be used with button mapper for android tv
+# Features
+
+* Made from skratch
+* Made without libraries
+* Made without gradle
+* Get famous movies
+* Get famous siries
+* Get movie/siries trailer
+* Get movie/siries title
+* Get movie/siries genres
+* Get movie/siries description
+* Get movie/siries release date
+* Get movie/siries rating
+* Get movie/siries duration
+* Get movie/siries actors
+* Get movie/siries recomended
+* Get movie/siries poster
+* Get siries episodes poster
+* Get siries total episodes
+* Get siries seasons
+* Get siries episodes
+* Get siries episode description
+* Get siries episode title
+* Get siries episode release date
+* Get actors social media
+* Get movies/siries where actors play in
+* Search movies/siries by text or genres
+* Search actors
+* Favorites
+* Button navigation for android tv
+* Shortcuts to be used with button mapper for android tv
 
 
 examples
