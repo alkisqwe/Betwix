@@ -33,6 +33,9 @@ A TMDB Client made without Libraries and without Gradle in Greek
 * Shortcuts to be used with button mapper for android tv
 
 # Examples
+<p align="center">
+<img src="https://github.com/user-attachments/assets/b011212c-bcf5-4070-90f1-580a169d8016"></img>
+</p>
 
 # How To Use
 Replace "tmdbid" with your own tmdb authentication id in res/values/strings
