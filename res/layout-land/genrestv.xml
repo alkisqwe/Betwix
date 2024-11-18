@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:id="@+id/sc"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΕΡΙΠΕΤΕΙΑ ΔΡΑΣΗΣ(ACT+ADV)"
+				android:id="@+id/twenty"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΚΙΝΟΥΜΕΝΩΝ ΣΧΕΔΙΩΝ(ANIMATION)"
+				android:id="@+id/twentyone"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΚΩΜΩΔΙΑ(COMEDY)"
+				android:id="@+id/twentytwo"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΓΚΛΗΜΑ(CRIME)"
+				android:id="@+id/twentythree"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΝΤΟΚΥΜΑΝΤΕΡ(DOCUMENTARY)"
+				android:id="@+id/twentyfour"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΡΑΜΑ(DRAMA)"
+				android:id="@+id/twentyfive"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΟΙΚΟΓΕΝΕΙΑΚΩΝ(FAMILY)"
+				android:id="@+id/twentysix"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΑΙΔΙΚΑ(KIDS)"
+				android:id="@+id/twentyseven"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΜΥΣΤΗΡΙΟΥ(MYSTERY)"
+				android:id="@+id/twentyeight"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΙΔΗΣΕΙΣ(NEWS)"
+				android:id="@+id/twentynine"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΡΑΓΜΑΤΙΚΟΤΗΤΑ(REALITY)"
+				android:id="@+id/thirty"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΠΙΣΤΗΜΟΝΙΚΗΣ ΦΑΝΤΑΣΙΑΣ(SCI-FI&amp;FANTASY)"
+				android:id="@+id/thirtyone"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΣΑΠΟΥΝΟΠΕΡΕΣ(SOAP)"
+				android:id="@+id/thirtytwo"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΟΜΙΛΙΑ(TALK)"
+				android:id="@+id/thirtythree"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΟΛΕΜΟΣ &amp; ΠΟΛΙΤΙΚΗ(WAR &amp; POLITICS)"
+				android:id="@+id/thirtyfour"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΥΤΙΚΟΣ(WESTERN)"
+				android:id="@+id/thirtyfive"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="ΚΑΘΑΡΙΣΜΑ"
+					android:id="@+id/clearbutton2"
+					android:layout_weight="1.0"/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="ΑΚΥΡΩΣΗ"
+					android:id="@+id/cancelbutton2"
+					android:layout_weight="1.0"/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="ΕΦΑΡΜΟΓΗ"
+					android:id="@+id/genresapply2"
+					android:layout_weight="1.0"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

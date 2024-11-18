@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#262626"
+			android:id="@+id/searchscrol">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="1080px"
+					android:layout_height="wrap_content">
+
+					<Spinner
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:id="@+id/spin"/>
+
+					<Spinner
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:id="@+id/spin2"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/edittextcontainer">
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:inputType="text"
+						android:maxLines="1"
+						android:layout_height="wrap_content"
+						android:id="@+id/searchedittext"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/filterbuttoncontainer">
+
+					<Button
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/filterbuttoncontainerer"
+						android:text="ΕΙΔΗ(GENRES)"
+						android:onClick="filters"/>
+
+				</LinearLayout>
+
+				<Button
+					android:id="@+id/searcherbutton"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΑΝΑΖΗΤΗΣΗ"
+					android:onClick="search"/>
+
+				<GridLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					rowCount="3"
+					columnCount="3"
+					android:rowCount="3"
+					android:id="@+id/searchgrid"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:layout_height="1dp"
+		android:background="#262626">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:layout_weight="0"
+			android:layout_gravity="bottom"
+			android:background="#FFFFFF">
+
+			<LinearLayout
+				android:id="@+id/homer"
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:onClick="home">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/homeimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΣΠΙΤΙ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/searcher"
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:onClick="searchbutton"
+				android:gravity="center|center_vertical|center_horizontal">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΑΝΑΖΗΤΗΣΗ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/morer"
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:onClick="more"
+				android:gravity="center|center_vertical|center_horizontal">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/moreimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΠΕΡΙΣΣΟΤΕΡΑ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

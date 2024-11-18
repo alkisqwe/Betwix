@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/backdrop"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:id="@+id/transone"
+		android:orientation="vertical"
+		android:layout_width="50dp"
+		android:layout_height="match_parent"
+		android:background="#000000">
+
+		<LinearLayout
+			android:id="@+id/transtwo"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:onClick="back"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:layout_weight="1">
+				
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:adjustViewBounds="true"
+					android:layout_width="50px"
+					android:layout_height="50px"
+					android:id="@+id/backimage"/>
+					
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transeleven"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Πίσω"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:id="@+id/bookmarking"
+			android:onClick="bookmark"
+			android:layout_weight="1">
+				
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:adjustViewBounds="true"
+					android:layout_width="50px"
+					android:layout_height="50px"
+					android:id="@+id/bookmark"/>
+					
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transtwelve"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Αποθήκευση"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transfive"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="home"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/homeimage"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transfourteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Αρχική"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transsix"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:onClick="search">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchimage"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transfifteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Αναζήτηση"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transseven"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="more"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/moreimage"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transsixteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Ρυθμίσεις"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="title"
+				android:textSize="30sp"
+				android:paddingTop="15dp"
+				android:id="@+id/title"/>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent">
+			
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_height="1000px"
+					android:layout_width="0dp"
+					android:layout_weight="1">
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+					
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1">
+					
+						<Button
+							android:layout_width="300dp"
+							android:layout_height="wrap_content"
+							android:text="ΠΡΟΒΟΛΗ"
+							android:nextFocusRight="@+id/youtubebutton"
+							android:id="@+id/watchnow"
+							android:onClick="watch"/>
+						
+					</LinearLayout>
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1">
+
+						<Button
+							android:layout_width="300dp"
+							android:layout_height="wrap_content"
+							android:text="ΠΡΟΒΟΛΗ ΑΓΓΛΙΚΑ"
+							android:nextFocusRight="@+id/youtubebutton"
+							android:id="@+id/watchnowenglish"
+							android:onClick="watchenglish"/>
+
+					</LinearLayout>
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+					
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1">
+					
+						<Button
+							android:onClick="youtubel"
+							android:text="ΜΗ ΔΙΑΘΕΣΙΜΟ"
+							android:layout_width="300dp"
+							android:layout_height="wrap_content"
+							android:id="@+id/youtubebutton"/>
+					
+					</LinearLayout>
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+					
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1">
+
+						<Button
+							android:id="@+id/informationbutton"
+							android:onClick="information"
+							android:layout_width="300dp"
+							android:layout_height="wrap_content"
+							android:text="ΠΛΗΡΟΦΟΡΙΕΣ"/>
+
+					</LinearLayout>
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+					
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1">
+
+						<Button
+							android:id="@+id/actorsinfobutton"
+							android:onClick="actorsbutton"
+							android:layout_width="300dp"
+							android:layout_height="wrap_content"
+							android:text="ΗΘΟΠΟΙΟΙ"/>
+
+					</LinearLayout>
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+					
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1">
+
+						<Button
+							android:id="@+id/protinomenabutton"
+							android:onClick="protinomena"
+							android:layout_width="300dp"
+							android:layout_height="wrap_content"
+							android:text="ΠΡΟΤΗΝΟΜΕΝΑ"/>
+
+					</LinearLayout>
+					
+					<Space
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="0.5"/>
+					
+				</LinearLayout>
+				
+				<LinearLayout
+					android:gravity="center|center_vertical|center_horizontal"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_weight="1">
+					
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="800px"
+						android:nextFocusLeft="@+id/watchnow"
+						android:id="@+id/background"/>
+
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/movieinfo"
+				android:onClick="empty"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="1080px">
+
+				<TextView
+					android:textSize="20sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="type"
+					android:id="@+id/type"/>
+
+				<TextView
+					android:textSize="20sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="year and stars"
+					android:paddingTop="20dp"
+					android:id="@+id/yearandstars"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:text="———————————————————————————————————————————————————————————"/>
+
+				<TextView
+					android:textSize="20sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="description short"
+					android:id="@+id/tagline"/>
+				
+				<TextView
+					android:textSize="20sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="description three lines"
+					android:id="@+id/description"/>
+
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/actorsinfo"
+				android:onClick="empty"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="1080px">
+				
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent">
+					
+					<LinearLayout
+						android:gravity="center|center_horizontal|center_vertical"
+						android:layout_gravity="center|center_vertical|center_horizontal"
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="1"
+						android:orientation="vertical">
+						
+						<ImageView
+							android:gravity="center|center_horizontal|center_vertical"
+							android:layout_gravity="center|center_vertical|center_horizontal"
+							android:id="@+id/actorsimageview"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+						
+					</LinearLayout>
+					
+					<LinearLayout
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="2"
+						android:orientation="vertical">
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Ηθοποιοί"
+							android:paddingTop="15dp"
+							android:textSize="25sp"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<com.example.betwix.hsv
+								android:id="@+id/scroller2"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent">
+
+								<LinearLayout
+									android:orientation="horizontal"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:id="@+id/castlayout"/>
+
+							</com.example.betwix.hsv>
+
+						</LinearLayout>
+						
+					</LinearLayout>
+				
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/protinomenaid"
+				android:onClick="empty"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="1080px">
+				
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent">
+					
+					<LinearLayout
+						android:layout_height="0dp"
+						android:layout_width="match_parent"
+						android:layout_weight="2"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/menutitle"
+							android:text="title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_weight="1"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:id="@+id/menudate"
+									android:text="release"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"/>
+
+								<TextView
+									android:id="@+id/menudescription"
+									android:text="description"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"/>
+	
+							</LinearLayout>
+					
+						</LinearLayout>
+						
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_weight="2"
+						android:layout_width="match_parent"
+						android:layout_height="0dp">
+					
+						<TextView
+							android:gravity="bottom"
+							android:layout_gravity="bottom"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Προτεινόμενα"
+							android:textSize="25sp"/>
+
+						<com.example.betwix.hsv
+							android:id="@+id/scroller"
+							android:gravity="bottom"
+							android:layout_gravity="bottom"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:id="@+id/recomendedlayout"/>
+
+						</com.example.betwix.hsv>
+
+					</LinearLayout>
+				
+				</LinearLayout>
+					
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

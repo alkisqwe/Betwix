@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:id="@+id/sc"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΡΑΣΗ(ACTION)"
+				android:id="@+id/one"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΕΡΙΠΕΤΕΙΑ(ADVENTURE)"
+				android:id="@+id/two"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΚΙΝΟΥΜΕΝΩΝ ΣΧΕΔΙΩΝ(ANIMATION)"
+				android:id="@+id/three"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΚΩΜΩΔΙΑ(COMEDY)"
+				android:id="@+id/four"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΓΚΛΗΜΑ(CRIME)"
+				android:id="@+id/five"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΝΤΟΚΥΜΑΝΤΕΡ(DOCUMENTARY)"
+				android:id="@+id/six"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΡΑΜΑ(DRAMA)"
+				android:id="@+id/seven"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΟΙΚΟΓΕΝΕΙΑΚΩΝ(FAMILY)"
+				android:id="@+id/eight"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΦΑΝΤΑΣΙΑ(FANTASY)"
+				android:id="@+id/nine"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΙΣΤΟΡΙΑ(HISTORY)"
+				android:id="@+id/ten"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΦΡΙΚΗ(HORROR)"
+				android:id="@+id/eleven"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΜΟΥΣΙΚΗ(MUSIC)"
+				android:id="@+id/twelve"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΜΥΣΤΗΡΙΟΥ(MYSTERY)"
+				android:id="@+id/threeteen"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΡΟΜΑΝΤΖΟ(ROMANCE)"
+				android:id="@+id/fourteen"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΠΙΣΤΗΜΟΝΙΚΗ ΦΑΝΤΑΣΙΑ(SCIENCE FICTION)"
+				android:id="@+id/fifteen"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΤΗΛΕΟΠΤΙΚΗ ΤΑΙΝΙΑ(TV-MOVIE)"
+				android:id="@+id/sixteen"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΦΙΛΜ ΑΓΩΝΙΑΣ(THRILLER)"
+				android:id="@+id/seventeen"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΟΛΕΜΙΚΕΣ(WAR)"
+				android:id="@+id/eighteen"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΥΤΙΚΕΣ(WESTERN)"
+				android:id="@+id/nineteen"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="ΚΑΘΑΡΙΣΜΑ"
+					android:id="@+id/clearbutton"
+					android:layout_weight="1.0"/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="ΑΚΥΡΩΣΗ"
+					android:id="@+id/cancelbutton"
+					android:layout_weight="1.0"/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="ΕΦΑΡΜΟΓΗ"
+					android:id="@+id/genresapply"
+					android:layout_weight="1.0"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

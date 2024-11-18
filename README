@@ -1,0 +1,45 @@
+A TMDB Client made without Libraries and without Gradle in Greek
+
+features
+made from skratch
+made without libraries
+made without gradle
+get famous movies
+get famous siries
+get movie/siries trailer
+get movie/siries title
+get movie/siries genres
+get movie/siries description
+get movie/siries release date
+get movie/siries rating
+get movie/siries duration
+get movie/siries actors
+get movie/siries recomended
+get movie/siries poster
+get siries episodes poster
+get siries total episodes
+get siries seasons
+get siries episodes
+get siries episode description
+get siries episode title
+get siries episode release date
+get actors social media
+get movies/siries where actors play in
+search movies/siries by text or genres
+search actors
+favorites
+button navigation for android tv
+shortcuts to be used with button mapper for android tv
+
+
+examples
+
+how to use
+replace tmdbid with your own tmdb authentication id in res/values/strings
+
+todo
+create proper ui for phones
+create adaptive ui for android tv(currently 52')
+add plugin support
+add multilanguage
+fix small bugs

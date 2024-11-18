@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:background="#636363"
+	android:gravity="center|center_vertical|center_horizontal">
+
+	<Button
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:onClick="three"
+		android:background="@drawable/livetvselector"/>
+
+	<Button
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:onClick="one"
+		android:background="@drawable/tainiesfirstselector"/>
+
+	<Button
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:onClick="two"
+		android:background="@drawable/eltainiesfirstselector"/>
+
+</LinearLayout>
+

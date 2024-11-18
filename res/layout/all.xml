@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#616161">
+
+		<ImageView
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:onClick="back"
+			android:id="@+id/backimage"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/allgridscroll"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.0">
+
+		<GridLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			rowCount="3"
+			columnCount="3"
+			android:id="@+id/allgrid"
+			android:rowCount="3"/>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_weight="0.1"
+		android:layout_height="1dp"
+		android:background="#262626">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:layout_weight="0"
+			android:layout_gravity="bottom"
+			android:background="#FFFFFF">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:onClick="home">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/homeimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΣΠΙΤΙ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:onClick="search">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΑΝΑΖΗΤΗΣΗ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:onClick="more"
+				android:gravity="center|center_vertical|center_horizontal">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/moreimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΠΕΡΙΣΣΟΤΕΡΑ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

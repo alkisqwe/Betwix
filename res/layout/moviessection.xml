@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#FFFFFF">
+
+		<ImageView
+			android:layout_weight="0.5"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="ΤΑΙΝΙΕΣ"
+			android:layout_weight="1"
+			android:onClick="movieref"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:background="#FFFFFF"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="ΣΕΙΡΕΣ"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:background="#FFFFFF"
+			android:onClick="tvref"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="ΛΙΣΤΑ ΜΟΥ"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:background="#FFFFFF"
+			android:onClick="favorites"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="#262626"
+		android:layout_weight="1.0">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΡΑΣΗ(ACTION)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolone"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΕΡΙΠΕΤΕΙΑ(ADVENTURE)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scroltwo"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΚΙΝΟΥΜΕΝΩΝ ΣΧΕΔΙΩΝ(ANIM)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolthree"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΚΩΜΩΔΙΑ(COMEDY)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolfour"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΓΚΛΗΜΑ(CRIME)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolfive"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΝΤΟΚΥΜΑΝΤΕΡ(DOCUMENT)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolsix"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΡΑΜΑ(DRAMA)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolseven"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΟΙΚΟΓΕΝΕΙΑΚΩΝ(FAMILY)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scroleight"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΦΑΝΤΑΣΙΑ(FANTASY)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolnine"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΙΣΤΟΡΙΑ(HISTORY)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolten"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΦΡΙΚΗ(HORROR)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scroleleven"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΜΟΥΣΙΚΗ(MUSIC)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scroltwelve"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΜΥΣΤΗΡΙΟΥ(MYSTERY)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolthreeteen"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΡΟΜΑΝΤΖΟ(ROMANCE)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolfourteen"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΕΠΙΣΤΗΜΟΝΙΚΗ ΦΑΝΤ(SCI-FI)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolfifteen"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΤΗΛΕΟΠΤΙΚΗ ΤΑΙΝΙΑ(TV-MOVIE)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolsixteen"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΦΙΛΜ ΑΓΩΝΙΑΣ(THRILLER)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolseventeen"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΠΟΛΕΜΙΚΕΣ(WAR)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scroleighteen"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ΔΥΤΙΚΕΣ(WESTERN)"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolnineteen"/>
+
+			</HorizontalScrollView>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_weight="0.1"
+		android:layout_height="1dp"
+		android:background="#262626">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:layout_weight="0"
+			android:layout_gravity="bottom"
+			android:background="#FFFFFF">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:onClick="home">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/homeimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΣΠΙΤΙ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:onClick="search">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΑΝΑΖΗΤΗΣΗ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:onClick="more"
+				android:gravity="center|center_vertical|center_horizontal">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/moreimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΠΕΡΙΣΣΟΤΕΡΑ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

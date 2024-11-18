@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/backdrop"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:id="@+id/transone"
+		android:orientation="vertical"
+		android:layout_width="50dp"
+		android:layout_height="match_parent"
+		android:background="#000000">
+
+		<ImageView
+			android:layout_weight="0.5"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"/>
+		
+		<LinearLayout
+			android:id="@+id/transtwo"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="moviessectionbutton"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<Button
+					android:id="@+id/transeight"
+					android:adjustViewBounds="true"
+					android:layout_width="50px"
+					android:layout_height="50px"
+					android:background="@drawable/movie"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transeleven"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Ταινίες"/>
+		
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transthree"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="tvref"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+		
+				<Button
+					android:id="@+id/transnine"
+					android:adjustViewBounds="true"
+					android:layout_width="50px"
+					android:layout_height="50px"
+					android:background="@drawable/tv"/>
+			
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transtwelve"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Σειρές"/>
+			
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transfour"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="fav"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+		
+				<Button
+					android:id="@+id/transten"
+					android:adjustViewBounds="true"
+					android:layout_width="50px"
+					android:layout_height="50px"
+					android:background="@drawable/bookmark"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transthirdteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Αποθηκευμένα"/>
+		
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transfive"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="home"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/homeimage"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transfourteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Αρχική"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transsix"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:onClick="search">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchimage"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transfifteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Αναζήτηση"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/transseven"
+			android:background="@drawable/generalselector"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:onClick="more"
+			android:gravity="center|center_vertical|center_horizontal">
+			
+			<LinearLayout
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="0.3">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/moreimage"/>
+				
+			</LinearLayout>
+			
+			<TextView
+				android:id="@+id/transsixteen"
+				android:layout_height="50px"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="Ρυθμίσεις"/>
+
+		</LinearLayout>
+
+		<ImageView
+			android:layout_weight="0.5"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"/>
+
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:id="@+id/menutitle"
+			android:text="title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_gravity="top"
+			android:gravity="top"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:id="@+id/menudate"
+					android:text="release"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:id="@+id/menudescription"
+					android:text="description"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:gravity="bottom"
+			android:layout_gravity="bottom"
+			android:orientation="vertical"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Αποθηκευμένα"
+				android:textSize="25sp"/>
+
+			<com.example.betwix.hsv
+				android:id="@+id/scroller"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/favoritesgrid"/>
+
+			</com.example.betwix.hsv>
+		
+		</LinearLayout>
+	
+	</LinearLayout>
+
+</LinearLayout>

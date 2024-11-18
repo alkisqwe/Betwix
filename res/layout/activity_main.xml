@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/backdrop"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#FFFFFF">
+
+		<ImageView
+			android:layout_weight="0.5"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="ΤΑΙΝΙΕΣ"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:background="#FFFFFF"
+			android:onClick="moviessectionn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="ΣΕΙΡΕΣ"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:background="#FFFFFF"
+			android:onClick="tvsectionn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:text="ΛΙΣΤΑ ΜΟΥ"
+			android:layout_weight="1"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:background="#FFFFFF"
+			android:onClick="favorites"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.0">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:id="@+id/famousmoviestext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Δημοφιλείς Ταινίες"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolview"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:id="@+id/famoustvtext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Δημοφιλείς Σειρές"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolviewsiries"/>
+
+			</HorizontalScrollView>
+
+			<TextView
+				android:id="@+id/favtext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Λίστα Μου"
+				android:textSize="25sp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/scrolviewmylist"/>
+
+			</HorizontalScrollView>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_weight="0.1"
+		android:layout_height="1dp"
+		android:background="#262626">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:layout_weight="0"
+			android:layout_gravity="bottom"
+			android:background="#FFFFFF">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:onClick="home"
+				android:gravity="center|center_vertical|center_horizontal">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/homeimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΣΠΙΤΙ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:onClick="search">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΑΝΑΖΗΤΗΣΗ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:onClick="more"
+				android:gravity="center|center_vertical|center_horizontal">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/moreimage"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ΠΕΡΙΣΣΟΤΕΡΑ"
+					android:gravity="center|center_vertical|center_horizontal"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

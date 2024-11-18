@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">freem2</string>
+    <string name="auth">Bearer tmdbid</string>
+</resources>
