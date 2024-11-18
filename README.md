@@ -32,15 +32,14 @@ A TMDB Client made without Libraries and without Gradle in Greek
 * Button navigation for android tv
 * Shortcuts to be used with button mapper for android tv
 
+# Examples
 
-examples
+# How To Use
+Replace "tmdbid" with your own tmdb authentication id in res/values/strings
 
-how to use
-replace tmdbid with your own tmdb authentication id in res/values/strings
-
-todo
-create proper ui for phones
-create adaptive ui for android tv(currently 52')
-add plugin support
-add multilanguage
-fix small bugs
+# To-Do
+Create proper ui for phones
+Create adaptive ui for android tv(currently 52')
+Add plugin support
+Add multilanguage
+Fix small bugs
