@@ -48,3 +48,4 @@ Replace "tmdbid" with your own tmdb authentication id in res/values/strings
 * Add multilanguage
 * Fix small bugs
 * Add settings menu
+* Add Plugins
